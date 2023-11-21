@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" type="text/css" href="/proyecto final/CSS/PaginaLogin.css">
+</head>
+<body>
+   
+    <main>
+        <section id="registration">
+            <h2>Regístrate</h2>
+            <form id="registroForm">
+                <label for="nombre">Nombres:</label>
+                <input type="text" id="nombre" required>
+
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" required>
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" required>
+
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contrasena" required>
+
+                <label for="genero">Género:</label>
+                <select id="genero">
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <button type="button" onclick="registrarUsuario()">Registrar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </footer>
+
+    <script src="registro.js"></script>
+</body>
+</html>
