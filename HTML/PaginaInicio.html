@@ -8,28 +8,28 @@
 
 
 <body>
-
-
     <header>
-
-        <!-- Banner con el nombre de la empresa -->
-        <h1>El bazar del artista</h1>
-        <h3>Iniciar sesión</h3>
-
-        <!-- Menú de navegación -->
+        <div class="logo">
+            <img class="logo__img" src="/proyecto final/img/El bazar del artista.png" alt="logo">
+            <h1 class="logo__titulo">El bazar del artista</h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="#about">Acerca de nosotros</a></li>
-                <li><a href="#services">Nuestros servicios</a></li>
-                <li><a href="#reviews">Reseñas</a></li>
+                <li><a href=>Usuario</a></li>
+                <li><a href="/proyecto final/HTML/paginaRegistrarse.html">Registrarse</a></li>
+                <li id="botonLogin"><a href="/proyecto final/HTML/paginaLogin.html">Iniciar sesión</a>
+                </li>
             </ul>
         </nav>
     </header>
 
+    <img src="/proyecto final/img/Banner.PNG" alt="so">
 
     <!-- Sección sobre la empresa -->
+    <h2 id="auxilio">Acerca de Nosotros</h2>
+
     <section id="about">
-        <h2>Acerca de Nosotros</h2>
+
 
         <p> "El Bazar del artista: Tu Fuente de Inspiración y Creatividad".
 
@@ -52,70 +52,56 @@
             inspiración y creatividad. El Bazar del artista, donde cada trazo es una obra maestra en proceso."
         </p>
 
-        <img src="https://fastly.4sqi.net/img/general/600x600/74189424_vFCrsPlsP8BCldNBcpHJdqjvR1flHAEBsu_pRRO2GdQ.jpg"
+        <img class="imagenEmpresa"
+            src="/proyecto final/img/El bazar del arte.jpg "
             alt="Imagen de la empresa">
+
     </section>
 
 
     <!-- Servicios de la empresa -->
     <section id="services">
-
-        <h2>Servicios</h2>
-        <ul>
-            <li>Suministros de pintura de alta calidad - Desde <strong> $4000</strong></li>
-            <li>Paquetes de lápices y marcadores artísticos - Desde<strong> $5000</strong></li>
-            <li>Lienzos y soportes - Desde <strong> $10000</strong>, dependiendo el tamaño</li>
-            <li>Artesanias y manualidades - Desde<strong> $8000</strong></li>
-            <li>Impresión 3D - Desde <strong> $4000</strong>, dependiendo el material y el tamaño</li>
-            <li>Material de escultura y tallado (arcilla, marmol, madera,) - Desde <strong> $2000</strong>, dependiendo
-                el tamaño y cantidad </li>
-            <li>Herramientas de escultura y accesorios artísticos - Desde <strong> $2000</strong></li>
-        </ul>
-    </section>
-
-    <!-- Servicios de la empresa -->
-    <section id="services">
-        <h2>Servicios</h2>
+        <h2 id="tituloServicios">Servicios</h2>
         <div class="services-container">
-            
+
             <div class="service-box">
-                <img src="imagen1.jpg" alt="Suministros de pintura">
+                <img src="/proyecto final/img/Pinturas.jpg" alt="Suministros de pintura">
                 <p>Suministros de pintura de alta calidad</p>
                 <p class="service-price">Desde $4000</p>
             </div>
-           
+
             <div class="service-box">
-                <img src="imagen2.jpg" alt="Paquetes de lápices y marcadores artísticos">
+                <img src="/proyecto final/img/a.jpg" alt="Paquetes de lápices y marcadores artísticos">
                 <p>Paquetes de lápices y marcadores artísticos</p>
                 <p class="service-price">Desde $5000</p>
             </div>
-            
+
             <div class="service-box">
-                <img src="imagen2.jpg" alt="Lienzos y soportes">
+                <img src="/proyecto final/img/lienzos.jpg" alt="Lienzos y soportes">
                 <p>Lienzos y soportes </p>
                 <p class="service-price">Desde $5000</p>
             </div>
 
             <div class="service-box">
-                <img src="imagen2.jpg" alt="Artesanias y manualidades">
+                <img src="/proyecto final/img/origami.jpg" alt="Artesanias y manualidades">
                 <p>Artesanias y manualidades</p>
                 <p class="service-price">Desde $5000</p>
             </div>
 
             <div class="service-box">
-                <img src="imagen2.jpg" alt="Impresión 3D ">
+                <img src="/proyecto final/img/3d.jpg" alt="Impresión 3D ">
                 <p>Impresión 3D </p>
                 <p class="service-price">Desde $5000</p>
             </div>
 
             <div class="service-box">
-                <img src="imagen2.jpg" alt="Material de escultura y tallado (arcilla, marmol, madera,)">
+                <img src="/proyecto final/img/chocolate.jpg" alt="Material de escultura y tallado (arcilla, marmol, madera,)">
                 <p>Material de escultura y tallado (arcilla, marmol, madera,)</p>
                 <p class="service-price">Desde $5000</p>
             </div>
 
             <div class="service-box">
-                <img src="imagen2.jpg" alt="Herramientas de escultura y accesorios artísticos">
+                <img src="/proyecto final/img/tallado.jpg" alt="Herramientas de escultura y accesorios artísticos">
                 <p>Herramientas de escultura y accesorios artísticos</p>
                 <p class="service-price">Desde $5000</p>
             </div>
@@ -123,31 +109,30 @@
         </div>
     </section>
 
-    <!-- Reseñas de consumidores -->
     <section id="reviews">
         <h2>Reseñas de Clientes</h2>
         <p>Lo que dicen nuestros clientes:</p>
-        <div class="review1">
-            <p>"He comprado mis suministros artísticos aquí durante años. ¡Siempre tienen lo que necesito y a precios
-                razonables!"</p>
-            <p>- María Sánchez</p>
-        </div>
-        <div class="review2">
-            <p>"La calidad de sus productos es excepcional. Definitivamente recomendaría El Bazar del Arte a cualquier
-                artista."</p>
-            <p>- Juan Rodríguez</p>
-        </div>
-        <div class="review3">
-            <p>"El Bazar del artista ha sido mi tienda de referencia durante años. Su amplia selección de materiales
-                artísticos y el personal amable siempre me hacen sentir bienvenido. ¡Gracias por ser una parte esencial
-                de mi proceso creativo!"</p>
-            <p>- Andrea Gómez</p>
-        </div>
-        <div class="review">
-            <p>"Siempre he confiado en El Bazar del artista para abastecerme de los mejores productos artísticos. Su
-                personal experto me ha brindado valiosos consejos y recomendaciones a lo largo de los años. Sin duda,
-                son mi elección número uno para suministros artísticos."</p>
-            <p>- Carlos Pérez</p>
+        <div class="reviews-container">
+            <div class="review">
+                <img src="/proyecto final/img/1.jpg" alt="Foto de María Sánchez">
+                <p>"He comprado mis suministros artísticos aquí durante años. ¡Siempre tienen lo que necesito y a precios razonables!"</p>
+                <p>- María Sánchez</p>
+            </div>
+            <div class="review">
+                <img src="/proyecto final/img/2.jpg" alt="Foto de Juan Rodríguez">
+                <p>"La calidad de sus productos es excepcional. Definitivamente recomendaría El Bazar del Arte a cualquier artista."</p>
+                <p>- Juan Rodríguez</p>
+            </div>
+            <div class="review">
+                <img src="/proyecto final/img/3.jpg" alt="Foto de Andrea Gómez">
+                <p>"El Bazar del artista ha sido mi tienda de referencia durante años. Su amplia selección de materiales artísticos y el personal amable siempre me hacen sentir bienvenido. ¡Gracias por ser una parte esencial de mi proceso creativo!"</p>
+                <p>- Andrea Gómez</p>
+            </div>
+            <div class="review">
+                <img src="/proyecto final/img/4.jpg" alt="Foto de Carlos Pérez">
+                <p>"Siempre he confiado en El Bazar del artista para abastecerme de los mejores productos artísticos. Su personal experto me ha brindado valiosos consejos y recomendaciones a lo largo de los años. Sin duda, son mi elección número uno para suministros artísticos."</p>
+                <p>- Carlos Pérez</p>
+            </div>
         </div>
     </section>
 

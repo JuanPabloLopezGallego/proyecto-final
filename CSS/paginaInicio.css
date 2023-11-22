@@ -1,15 +1,26 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@900&display=swap');
 
 header {
-    background-color: #333333;
+    background-color: #0F7173;
     color: #ffffff;
-    padding: 20px;
-    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
 }
+
+.logo {
+    display: flex;
+    align-items: center; 
+    color: #242038;
+}
+
+.logo__img {
+    height: 100px;
+}
+
 
 h1 {
     margin: 0;
@@ -27,32 +38,131 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: #ffffff;
+    color: #242038;
     font-weight: bold;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+#auxilio{
+    text-align: center;
+    
+    font-size: 30px;
+}
+
+#about {
+    display: flex;
+    align-items: flex-start;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 60px;
+}
+
+.imagenEmpresa {
+    width: 25%;
+    border-radius: 23px;
 }
 
 section {
     padding: 20px;
 }
 
-#about img {
+#services {
+    padding: 20px;
+}
+
+#services h2 {
+    text-align: center;
+}
+
+#services .services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.service-box {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.service-box img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    margin-top: 20px;
-}
-
-#services ul {
-    list-style: none;
-    padding: 0;
-}
-
-#services li {
     margin-bottom: 10px;
 }
 
+.service-price {
+    font-weight: bold;
+    color: #4caf50;
+    margin-top: 10px;
+}
+
+#services::-webkit-scrollbar {
+    height: 8px;
+}
+
+#services::-webkit-scrollbar-thumb {
+    background-color: #4caf50;
+    border-radius: 8px;
+}
+
+#services::-webkit-scrollbar-track {
+    background-color: #e0e0e0;
+}
+
+/* Estilos para las reseñas */
+#reviews {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Puedes ajustar esto según tus preferencias */
+}
+
+.review {
+    width: 300px; /* Ajusta el ancho según tus necesidades */
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.review img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.review p {
+    margin-bottom: 10px;
+}
+
+.review:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento para evitar desbordamiento */
+}
+
 footer {
-    background-color: #333333;
+    background-color: rgb(33, 97, 116);
     color: #ffffff;
     text-align: center;
     padding: 10px;
