@@ -1,47 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Registro de Usuario</title>
     <link rel="stylesheet" type="text/css" href="/proyecto final/CSS/PaginaRegistrarse.css">
 </head>
+
 <body>
-   
-    <main>
-        <section id="registration">
-            <h2>Regístrate</h2>
-            <form id="registroForm">
-                <label for="nombre">Nombres:</label>
-                <input type="text" id="nombre" required>
 
-                <label for="apellidos">Apellidos:</label>
-                <input type="text" id="apellidos" required>
+    <section id="registration">
+        <h2>¡Regístrate!</h2>
+        <form id="registroForm">
+            <label for="nombre">Nombres:</label>
+            <input type="text" id="nombre" required>
 
-                <label for="correo">Correo Electrónico:</label>
-                <input type="email" id="correo" required>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" required>
 
-                <label for="contraseña">Contraseña:</label>
-                <input type="password" id="contrasena" required>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" required>
 
-                <label for="genero">Género:</label>
-                <select id="genero">
-                    <option value="masculino">Masculino</option>
-                    <option value="femenino">Femenino</option>
-                    <option value="otro">Otro</option>
-                </select>
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contrasena" required>
 
-                <button type="button" onclick="registrarUsuario()">Registrar</button>
-            </form>
-        </section>
-    </main>
+            <label for="genero">Género:</label>
+            <select id="genero">
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
 
-    <footer>
-        <ul>
-            <li><a href="https://www.facebook.com">Facebook</a></li>
-            <li><a href="https://www.instagram.com">Twitter</a></li>
-            <li><a href="https://twitter.com/?lang=es">Instagram</a></li>
-        </ul>
-    </footer>
+            <button type="button" onclick="registrarUsuario()">Registrarse</button>
+        </form>
+    </section>
 
     <script src="/proyecto final/JS/registro.js"></script>
 </body>
+
 </html>

@@ -1,27 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@900&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    
     background-color: #f4f4f4;
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-color: #242038;
 }
 
-main {
+#registration {
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    
 }
 
 #registration {
-    padding: 20px;
+    padding: 40px;
+    width: auto;
 }
 
 h2 {
     text-align: center;
-    color: #333333;
+    color: #0F7173;
+    font-size: 60px;
+    font-family: 'Outfit', sans-serif;
 }
 
 form {
@@ -31,7 +39,7 @@ form {
 
 label {
     margin-bottom: 8px;
-    color: #555555;
+    color: #425255
 }
 
 input,
@@ -44,7 +52,7 @@ select {
 }
 
 button {
-    background-color: #4caf50;
+    background-color: #242038;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -54,12 +62,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
-}
-
-footer {
-    text-align: center;
-    margin-top: 20px;
+    background-color: #443e64;
 }
 
 ul {
